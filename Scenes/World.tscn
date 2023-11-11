@@ -1,0 +1,37 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://Scripts/World.gd" type="Script" id=1]
+[ext_resource path="res://Scenes/Rooms/Shop_Room/Shop_Right_Room.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/Rooms/End_Room/End_Right_Room.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/Rooms/Shop_Room/Shop_Left_Room.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scenes/Rooms/End_Room/End_Left_Room.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Scenes/Rooms/Regular_Rooms/Right_Room.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Scenes/Rooms/Regular_Rooms/Left_Room.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Scenes/Rooms/End_Room/End_Up_Room.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Scenes/Rooms/Regular_Rooms/Up_Room.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Scenes/Rooms/Regular_Rooms/Down_Room.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Scenes/Rooms/End_Room/End_Down_Room.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Scenes/Rooms/Shop_Room/Shop_Up_Room.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Scenes/Rooms/Shop_Room/Shop_Down_Room.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Scenes/Rooms/Start_Room/Start_Room.tscn" type="PackedScene" id=14]
+
+[node name="World" type="Node2D"]
+script = ExtResource( 1 )
+start_room = ExtResource( 14 )
+up_room = ExtResource( 9 )
+down_room = ExtResource( 10 )
+left_room = ExtResource( 7 )
+right_room = ExtResource( 6 )
+up_end_room = ExtResource( 8 )
+down_end_room = ExtResource( 11 )
+left_end_room = ExtResource( 5 )
+right_end_room = ExtResource( 3 )
+up_shop_room = ExtResource( 12 )
+down_shop_room = ExtResource( 13 )
+left_shop_room = ExtResource( 4 )
+right_shop_room = ExtResource( 2 )
+max_rooms = 10
+room_spacing = 56.0
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
